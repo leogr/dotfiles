@@ -19,3 +19,8 @@ export PROMPT_COMMAND="$PROMPT_COMMAND;$PROMPT_COMMAND_WRAPPER"
 
 # Aliases
 source ~/.dotfiles/bash/aliases.bash
+
+# Completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+    . /opt/local/etc/profile.d/bash_completion.sh
+fi
