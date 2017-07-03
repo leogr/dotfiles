@@ -1,3 +1,5 @@
+alias dotfiles='code ~/.dotfiles'
+
 alias ls='ls -G'
 alias ll='ls -lha'
 

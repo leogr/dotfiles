@@ -7,6 +7,7 @@
  - [MacPorts](https://guide.macports.org/#installing) 2.4.1
  - GNU bash 4.4.12 (x86_64-apple-darwin16.4.0) 
  - MacPorts [bash-completion](https://trac.macports.org/wiki/howto/bash-completion)
+ - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Setup
 
