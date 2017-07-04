@@ -12,4 +12,5 @@ fi
 # Link VSCode
 ln -sf "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
 
-
+# Install git-code
+bash <(curl -fsSL https://leogr.github.io/git-code/install.sh)
