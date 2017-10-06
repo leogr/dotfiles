@@ -24,3 +24,8 @@ source ~/.dotfiles/bash/aliases.bash
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
 fi
+
+# Go paths
+export GOROOT="$(go env GOROOT)"
+export GOPATH="$(go env GOPATH)"
+export PATH="$PATH:$GOPATH/bin"
