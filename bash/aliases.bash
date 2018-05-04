@@ -6,7 +6,7 @@ alias ll='ls -lha'
 alias reload='source ~/.bash_profile'
 
 # OSX lockscreen
-alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias lockscreen='~/.dotfiles/bin/lockscreen'
 alias bye='lockscreen'
 
 # Mute/Unmute the system volume. Plays nice with all other volume settings.

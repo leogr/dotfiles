@@ -14,3 +14,6 @@ ln -sf "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /u
 
 # Install git-code
 bash <(curl -fsSL https://leogr.github.io/git-code/install.sh)
+
+# Build lockscreen
+clang -F /System/Library/PrivateFrameworks -framework login -o bin/lockscreen lockscreen/lockscreen.c
