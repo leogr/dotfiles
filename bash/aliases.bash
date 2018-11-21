@@ -26,3 +26,4 @@ fi
 
 # Other stuff
 alias alpine='docker run -it --rm -v ~/:/Users/$(whoami) alpine sh'
+alias nsenter1='docker run -it --rm --privileged --pid=host justincormack/nsenter1'
