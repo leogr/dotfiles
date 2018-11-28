@@ -14,8 +14,7 @@ export GIT_PS1_SHOWUPSTREAM="verbose git"
 export GIT_PS1_SHOWCOLORHINTS=true
 
 # Prompt
-export PROMPT_COMMAND_WRAPPER='__git_ps1 "${gray}\u@\h:${cyan}\w${reset_color}" "\\\$ " "${gray}(${reset_color}%s${gray})${reset_color}"'
-export PROMPT_COMMAND="$PROMPT_COMMAND;$PROMPT_COMMAND_WRAPPER"
+export PROMPT_COMMAND='__git_ps1 "${gray}\u@\h:${cyan}\w${reset_color}" "\\\$ " "${gray}(${reset_color}%s${gray})${reset_color}"'
 
 # kubectl autocomplete
 if [ -f /usr/local/bin/kubectl ]; then
