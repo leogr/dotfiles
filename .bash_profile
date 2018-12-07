@@ -16,19 +16,6 @@ export GIT_PS1_SHOWCOLORHINTS=true
 # Prompt
 export PROMPT_COMMAND='__git_ps1 "${gray}\u@\h:${cyan}\w${reset_color}" "\\\$ " "${gray}(${reset_color}%s${gray})${reset_color}"'
 
-# kubectl autocomplete
-if [ -f /usr/local/bin/kubectl ]; then
-    source <(kubectl completion bash)
-fi
-
-# Aliases
-source ~/.dotfiles/bash/aliases.bash
-
-# Completion
-if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
-    . /opt/local/etc/profile.d/bash_completion.sh
-fi
-
 # Go paths
 export GOROOT="$(go env GOROOT)"
 export GOPATH="$(go env GOPATH)"
@@ -36,3 +23,9 @@ export PATH="$PATH:$GOPATH/bin"
 
 # System-wide .bashrc
 source /etc/bashrc
+
+# Completion
+source ~/.dotfiles/bash/completion.bash
+
+# Aliases
+source ~/.dotfiles/bash/aliases.bash
