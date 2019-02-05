@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
 
+set -xeuo pipefail
+
+# Install or update
 if [ -e "${HOME}/.dotfiles" ]; then
     echo "~> .dotfiles folder already found in ${HOME}. Updating..."
     git -C ~/.dotfiles pull
 else
     echo "~> Installing .dotfiles folder in ${HOME}..."
-    rm -Rf ~/.dotfiles
     git clone https://github.com/leogr/dotfiles ~/.dotfiles
 fi
 
-# Link VSCode
-ln -sf "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
-
 # Install git-code
 bash <(curl -fsSL https://leogr.github.io/git-code/install.sh)
-
-# Build lockscreen
-clang -F /System/Library/PrivateFrameworks -framework login -o bin/lockscreen lockscreen/lockscreen.c
