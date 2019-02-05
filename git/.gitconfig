@@ -4,9 +4,12 @@
 [core]
 	editor = nano
 [credential]
-	helper = osxkeychain
+	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[alias]
+	code = !~/.git-code/bin/git-code.sh
+
