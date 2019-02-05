@@ -3,14 +3,15 @@
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export TERM=xterm-256color
 
 export EDITOR=nano
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/leogr/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -54,9 +55,9 @@ ZSH_THEME="robbyrussell"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="yyyy.mm.dd"
+HIST_STAMPS="yyyy-mm-dd"
 
-# Would you like to use another custom folder than $ZSH/custom?
+# Would you like to use another custom fkolder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/.config/zsh
 
 # Which plugins would you like to load?
