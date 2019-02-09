@@ -1,0 +1,6 @@
+{
+    "git.autofetch": true,
+    "terminal.integrated.fontFamily": "DroidSansMonoForPowerline Nerd Font",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.fontWeightBold": "normal"
+}

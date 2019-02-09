@@ -8,3 +8,4 @@ fc-cache -fv ~/.local/share/fonts/
 $stow git
 $stow kitty
 $stow zsh
+$stow vscode
