@@ -3,6 +3,18 @@ alias reload='source ~/.zshrc'
 
 alias ls='ls --color=tty -ha'
 
+# App shortcuts
+f() {
+    : "${1:=.}"
+    nohup nautilus -w $1 > /dev/null 2>&1 &!
+}
+alias fh='f ~'
+
+c() {
+    : "${1:=.}"
+    code $1
+}
+
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
