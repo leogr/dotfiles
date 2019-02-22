@@ -1,4 +1,4 @@
-alias dotfiles='code ~/.dotfiles'
+alias dotfiles='c ~/.dotfiles'
 alias reload='source ~/.zshrc'
 
 alias ls='ls --color=tty -ha'
@@ -13,6 +13,7 @@ alias fh='f ~'
 c() {
     : "${1:=.}"
     code $1
+    cd $1
 }
 
 # GNOME3 lockscreen
