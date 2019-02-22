@@ -11,5 +11,9 @@ else
     git clone https://github.com/leogr/dotfiles ~/.dotfiles
 fi
 
+# Stow packages
+echo "~> Stow packages..."
+bash stow.sh
+
 # Install git-code
 bash <(curl -fsSL https://leogr.github.io/git-code/install.sh)
