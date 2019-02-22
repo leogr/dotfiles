@@ -83,6 +83,7 @@ plugins=(
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export CDPATH=.:$HOME:$HOME/code
 
 
 # Preferred editor for local and remote sessions
