@@ -1,6 +1,12 @@
 {
     "git.autofetch": true,
+    "git.confirmSync": false,
     "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
     "terminal.external.linuxExec": "kitty",
-    "terminal.integrated.fontWeightBold": "normal"
+    "terminal.integrated.fontWeightBold": "normal",
+    "workbench.colorCustomizations" : {
+        "terminal.foreground" : "#ffffffc0",
+        "terminal.background" : "#000000"
+    },
+    "window.zoomLevel": 1
 }
