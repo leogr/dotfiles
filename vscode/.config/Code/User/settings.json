@@ -8,5 +8,6 @@
         "terminal.foreground" : "#ffffffc0",
         "terminal.background" : "#000000"
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false
 }
