@@ -1,5 +1,6 @@
 alias dotfiles='c ~/.dotfiles'
 alias reload='source ~/.zshrc'
+alias reboot2mac='sudo efibootmgr --bootnext 0080 && reboot'
 
 alias ls='ls --color=tty -ha'
 
