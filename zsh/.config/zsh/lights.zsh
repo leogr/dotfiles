@@ -1,4 +1,5 @@
 # Lights control
+# (todo) https://wiki.archlinux.org/index.php/Mac#Light_sensor 
 
 # Brightness for Screen and Keyboard via dbus
 gbrightness() {
@@ -20,16 +21,15 @@ huescene() {
 
 nightlight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+    gbrightness Keyboard 10
     gbrightness Screen 10
-    gbrightness Keyboard 20
     ddcbrightness 0
     huescene nightworking
 }
 
 daylight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+    gbrightness Keyboard 75    
     gbrightness Screen 25
-    gbrightness Keyboard 75
     ddcbrightness 5
-    huescene Bright
 }
