@@ -73,6 +73,8 @@ plugins=(
   colorize
   common-aliases
   docker
+  kubectl
+  minikube
   encode64
   golang
   jsontools
