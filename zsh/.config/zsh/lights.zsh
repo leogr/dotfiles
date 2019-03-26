@@ -24,7 +24,7 @@ nightlight() {
     gbrightness Keyboard 10
     gbrightness Screen 10
     ddcbrightness 0
-    huescene nightworking
+    huescene nightmood
 }
 
 daylight() {
@@ -32,4 +32,5 @@ daylight() {
     gbrightness Keyboard 75    
     gbrightness Screen 25
     ddcbrightness 5
+    huescene daymood
 }
