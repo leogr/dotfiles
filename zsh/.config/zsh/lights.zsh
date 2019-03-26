@@ -19,6 +19,12 @@ huescene() {
     hueadm recall-scene $id $2 > /dev/null
 }
 
+desklamp() {
+    : "${1:=on}"
+    # Default Lamp ID: 3 (desk lamp)
+    hueadm light 3 $1 
+}
+
 nightlight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
     gbrightness Keyboard 10
@@ -31,6 +37,6 @@ daylight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
     gbrightness Keyboard 75    
     gbrightness Screen 25
-    ddcbrightness 5
+    ddcbrightness 20
     huescene daymood
 }
