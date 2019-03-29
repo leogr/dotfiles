@@ -20,3 +20,13 @@ c() {
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
+
+# Minikube
+minikubenv() {
+    local s
+    s=$(minikube status --format "{{.Host}}")
+    
+    kitty @set-tab-title minikube
+    if [ $s != "Running" ]; then minikube start; fi
+    eval $(minikube docker-env)
+}
