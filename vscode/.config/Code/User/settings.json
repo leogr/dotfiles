@@ -9,5 +9,6 @@
         "terminal.background" : "#000000"
     },
     "window.zoomLevel": 1,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme"
 }
