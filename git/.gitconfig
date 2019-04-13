@@ -1,6 +1,7 @@
 [user]
 	name = Leonardo Grasso
 	email = me@leonardograsso.com
+	signingkey = 27574B83
 [core]
 	editor = nano
 [credential]
@@ -13,3 +14,8 @@
 [alias]
 	code = !~/.git-code/bin/git-code.sh
 
+[gpg]
+	program = gpg2
+
+[commit]
+	gpgsign = true
