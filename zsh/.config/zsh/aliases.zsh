@@ -17,6 +17,10 @@ c() {
     cd $1
 }
 
+u() {
+    xdg-open "$(git remote get-url origin)" > /dev/null 2>&1
+}
+
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
