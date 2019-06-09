@@ -105,6 +105,7 @@ export CDPATH=.:$HOME:$HOME/code
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+export KUBECONFIG=${HOME}/.kube/config:${HOME}/.kube/kind-config-kind
 
 
 # Preferred editor for local and remote sessions
