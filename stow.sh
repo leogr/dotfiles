@@ -5,6 +5,7 @@ stow=$(command -v stow)
 $stow fonts
 fc-cache -fv ~/.local/share/fonts/
 
+$stow chrome
 $stow gnupg
 $stow user-dirs
 $stow git
