@@ -12,5 +12,6 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "go.formatTool": "goimports"
 }
