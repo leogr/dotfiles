@@ -4,6 +4,7 @@
 	signingkey = 27574B83
 [core]
 	editor = nano
+	excludesfile = ~/.gitignore_global
 [credential]
 	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
 [filter "lfs"]
