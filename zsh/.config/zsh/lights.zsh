@@ -8,7 +8,9 @@ gbrightness() {
 
 # Brightness for external monitor via i2c
 ddcbrightness () {
-    nohup ddcutil setvcp 10 $1 > /dev/null 2>&1 &!
+    nohup sh -c \
+        "ddcutil setvcp -d 1 10 $1 && ddcutil setvcp -d 2 10 $1" \
+        > /dev/null 2>&1 &!
 }
 
 # Philips Hue scene switcher
@@ -27,7 +29,7 @@ desklamp() {
 
 nightlight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-    gbrightness Keyboard 10
+    gbrightness Keyboard 50
     gbrightness Screen 10
     ddcbrightness 0
     huescene nightmood
@@ -35,8 +37,8 @@ nightlight() {
 
 daylight() {
     gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-    gbrightness Keyboard 75    
-    gbrightness Screen 25
-    ddcbrightness 20
+    gbrightness Keyboard 100    
+    gbrightness Screen 20
+    ddcbrightness 5
     huescene daymood
 }
