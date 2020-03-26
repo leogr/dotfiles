@@ -101,6 +101,7 @@ plugins=(
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export CDPATH=.:$HOME:$HOME/code
+export PATH=$PATH:$HOME/bin
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
