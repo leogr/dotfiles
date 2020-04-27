@@ -1,6 +1,5 @@
 alias dotfiles='c ~/.dotfiles'
 alias reload='source ~/.zshrc'
-alias reboot2mac='sudo efibootmgr --bootnext 0080 && reboot'
 
 alias ls='ls --color=tty -ha'
 
@@ -24,13 +23,3 @@ u() {
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
-
-# Minikube
-minikubenv() {
-    local s
-    s=$(minikube status --format "{{.Host}}")
-    
-    kitty @set-tab-title minikube
-    if [ $s != "Running" ]; then minikube start; fi
-    eval $(minikube docker-env)
-}
