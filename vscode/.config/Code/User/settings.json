@@ -16,5 +16,9 @@
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "git.alwaysSignOff": true,
-    "grammarly.userWords": []
+    "grammarly.userWords": [],
+    "cmake.configureOnOpen": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false
 }
