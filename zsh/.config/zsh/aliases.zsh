@@ -23,3 +23,7 @@ u() {
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
+
+# etc...
+
+alias paclist="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
