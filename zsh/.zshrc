@@ -146,5 +146,5 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\uf176'
 POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\uf175'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
-
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs) # default: status root_indicator background_jobs history time
 source $ZSH/oh-my-zsh.sh
