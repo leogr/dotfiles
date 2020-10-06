@@ -12,3 +12,4 @@ $stow git
 $stow kitty
 $stow zsh
 $stow vscode
+$stow tmux
