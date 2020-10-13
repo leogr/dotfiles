@@ -89,11 +89,14 @@ plugins=(
   common-aliases
   docker
   kubectl
-  minikube
   encode64
   golang
   jsontools
-  sudo 
+  sudo
+  go
+  helm
+  systemd
+  tmux
 )
 
 
