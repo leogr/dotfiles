@@ -4,9 +4,9 @@
     "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
     "terminal.external.linuxExec": "kitty",
     "terminal.integrated.fontWeightBold": "normal",
-    "workbench.colorCustomizations" : {
-        "terminal.foreground" : "#ffffffc0",
-        "terminal.background" : "#000000"
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ffffffc0",
+        "terminal.background": "#000000"
     },
     "window.zoomLevel": 1,
     "explorer.confirmDragAndDrop": false,
@@ -23,5 +23,19 @@
     "gitlens.advanced.telemetry.enabled": false,
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modifications"
+    "C_Cpp.updateChannel": "Insiders",
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "[cpp]": {
+        "editor.formatOnSaveMode": "modifications",
+        "editor.formatOnSave": true,
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    }
 }
