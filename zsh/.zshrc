@@ -93,7 +93,6 @@ plugins=(
   golang
   jsontools
   sudo
-  go
   helm
   systemd
   tmux
