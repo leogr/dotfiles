@@ -9,7 +9,9 @@ gbrightness() {
 # Brightness for external monitor via i2c
 ddcbrightness () {
     nohup sh -c \
-        "ddcutil setvcp -d 1 10 $1 && ddcutil setvcp -d 2 10 $1" \
+        "ddcutil setvcp --display=3 10 $1 --noverify --async --less-sleep && \
+         ddcutil setvcp --display=2 10 $1 --noverify --async --less-sleep && \
+         ddcutil setvcp --display=1 10 $1 --noverify --async --less-sleep" \
         > /dev/null 2>&1 &!
 }
 
