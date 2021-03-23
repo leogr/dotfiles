@@ -1,5 +1,9 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -26,7 +30,6 @@ export EDITOR=nano
 export ZSH=$HOME/.oh-my-zsh
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-POWERLEVEL9K_MODE=nerdfont-complete
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -86,8 +89,12 @@ plugins=(
   git
   colored-man-pages
   colorize
+  command-not-found
   common-aliases
+  copydir
+  copyfile
   docker
+  fzf
   kubectl
   encode64
   golang
@@ -96,6 +103,7 @@ plugins=(
   helm
   systemd
   tmux
+  zsh-autosuggestions
 )
 
 
@@ -110,43 +118,7 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 export KUBECONFIG=${HOME}/.kube/config:${HOME}/.kube/kind-config-kind
 
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Powerlevel9k config
-
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-
-POWERLEVEL9K_TIME_ICON=""
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S %d.%m.%y}"
-
-POWERLEVEL9K_VCS_GIT_ICON='\uf1d3'
-POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uf09b'
-
-# Plus icon
-POWERLEVEL9K_VCS_STAGED_ICON='\uf44d'
-
-# Asterisk icon
-POWERLEVEL9K_VCS_UNTRACKED_ICON='*U'
-POWERLEVEL9K_VCS_UNSTAGED_ICON='\uf881'
-
-# Up & down icons
-POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\uf176'
-POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\uf175'
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs) # default: status root_indicator background_jobs history time
 source $ZSH/oh-my-zsh.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
