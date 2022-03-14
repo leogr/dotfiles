@@ -91,7 +91,6 @@ plugins=(
   colorize
   command-not-found
   common-aliases
-  copydir
   copyfile
   docker
   fzf
