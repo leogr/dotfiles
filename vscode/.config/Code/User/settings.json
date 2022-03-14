@@ -20,8 +20,6 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "gitlens.advanced.telemetry.enabled": false,
-    "editor.formatOnType": true,
-    "editor.formatOnSave": true,
     "C_Cpp.updateChannel": "Insiders",
     "[go]": {
         "editor.insertSpaces": true,
@@ -32,7 +30,7 @@
     },
     "[cpp]": {
         "editor.formatOnSaveMode": "modifications",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true
@@ -43,10 +41,13 @@
     "window.zoomLevel": 1,
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "yaml": true,
         "plaintext": false,
         "markdown": true
     },
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "go.toolsManagement.autoUpdate": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }
