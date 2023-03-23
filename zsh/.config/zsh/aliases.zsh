@@ -19,6 +19,13 @@ u() {
     xdg-open "$(git remote get-url origin)" > /dev/null 2>&1
 }
 
+btreload() {
+    sudo modprobe -r btusb
+    sudo modprobe btusb
+    sleep 1
+    sudo systemctl restart bluetooth
+}
+
 # GNOME3 lockscreen
 alias lockscreen='xdg-screensaver lock'
 alias bye='lockscreen'
