@@ -111,14 +111,15 @@ plugins=(
 # export MANPATH="/usr/local/man:$MANPATH"
 export CDPATH=.:$HOME:$HOME/code
 export PATH=$PATH:$HOME/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 export KUBECONFIG=${HOME}/.kube/config:${HOME}/.kube/kind-config-kind
+export PATH="$HOME/.cargo/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="$HOME/.local/bin:$PATH"
